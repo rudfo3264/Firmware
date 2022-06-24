@@ -1,0 +1,1066 @@
+
+Mini_Project.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000036  00800100  0000056a  000005de  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000056a  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000614  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000644  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 000000a0  00000000  00000000  00000684  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000013a7  00000000  00000000  00000724  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000a81  00000000  00000000  00001acb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000008ec  00000000  00000000  0000254c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000124  00000000  00000000  00002e38  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000004ff  00000000  00000000  00002f5c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000009b0  00000000  00000000  0000345b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000098  00000000  00000000  00003e0b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ea e6       	ldi	r30, 0x6A	; 106
+  a0:	f5 e0       	ldi	r31, 0x05	; 5
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a6 33       	cpi	r26, 0x36	; 54
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	02 d1       	rcall	.+516    	; 0x2b8 <main>
+  b4:	58 c2       	rjmp	.+1200   	; 0x566 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <Lcd_Data>:
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  b8:	e5 e6       	ldi	r30, 0x65	; 101
+  ba:	f0 e0       	ldi	r31, 0x00	; 0
+  bc:	90 81       	ld	r25, Z
+  be:	91 60       	ori	r25, 0x01	; 1
+  c0:	90 83       	st	Z, r25
+  c2:	90 81       	ld	r25, Z
+  c4:	9d 7f       	andi	r25, 0xFD	; 253
+  c6:	90 83       	st	Z, r25
+  c8:	90 81       	ld	r25, Z
+  ca:	94 60       	ori	r25, 0x04	; 4
+  cc:	90 83       	st	Z, r25
+  ce:	90 e1       	ldi	r25, 0x10	; 16
+  d0:	9a 95       	dec	r25
+  d2:	f1 f7       	brne	.-4      	; 0xd0 <Lcd_Data+0x18>
+  d4:	00 c0       	rjmp	.+0      	; 0xd6 <Lcd_Data+0x1e>
+  d6:	85 bb       	out	0x15, r24	; 21
+  d8:	80 e1       	ldi	r24, 0x10	; 16
+  da:	8a 95       	dec	r24
+  dc:	f1 f7       	brne	.-4      	; 0xda <Lcd_Data+0x22>
+  de:	00 c0       	rjmp	.+0      	; 0xe0 <Lcd_Data+0x28>
+  e0:	80 81       	ld	r24, Z
+  e2:	8b 7f       	andi	r24, 0xFB	; 251
+  e4:	80 83       	st	Z, r24
+  e6:	08 95       	ret
+
+000000e8 <Lcd_Cmd>:
+  e8:	e5 e6       	ldi	r30, 0x65	; 101
+  ea:	f0 e0       	ldi	r31, 0x00	; 0
+  ec:	90 81       	ld	r25, Z
+  ee:	9e 7f       	andi	r25, 0xFE	; 254
+  f0:	90 83       	st	Z, r25
+  f2:	90 81       	ld	r25, Z
+  f4:	9d 7f       	andi	r25, 0xFD	; 253
+  f6:	90 83       	st	Z, r25
+  f8:	90 81       	ld	r25, Z
+  fa:	94 60       	ori	r25, 0x04	; 4
+  fc:	90 83       	st	Z, r25
+  fe:	90 e1       	ldi	r25, 0x10	; 16
+ 100:	9a 95       	dec	r25
+ 102:	f1 f7       	brne	.-4      	; 0x100 <Lcd_Cmd+0x18>
+ 104:	00 c0       	rjmp	.+0      	; 0x106 <Lcd_Cmd+0x1e>
+ 106:	85 bb       	out	0x15, r24	; 21
+ 108:	80 e1       	ldi	r24, 0x10	; 16
+ 10a:	8a 95       	dec	r24
+ 10c:	f1 f7       	brne	.-4      	; 0x10a <Lcd_Cmd+0x22>
+ 10e:	00 c0       	rjmp	.+0      	; 0x110 <Lcd_Cmd+0x28>
+ 110:	80 81       	ld	r24, Z
+ 112:	8b 7f       	andi	r24, 0xFB	; 251
+ 114:	80 83       	st	Z, r24
+ 116:	08 95       	ret
+
+00000118 <Lcd_CHAR>:
+ 118:	cf df       	rcall	.-98     	; 0xb8 <Lcd_Data>
+ 11a:	89 ef       	ldi	r24, 0xF9	; 249
+ 11c:	90 e0       	ldi	r25, 0x00	; 0
+ 11e:	01 97       	sbiw	r24, 0x01	; 1
+ 120:	f1 f7       	brne	.-4      	; 0x11e <Lcd_CHAR+0x6>
+ 122:	00 c0       	rjmp	.+0      	; 0x124 <Lcd_CHAR+0xc>
+ 124:	00 00       	nop
+ 126:	08 95       	ret
+
+00000128 <Lcd_STR>:
+ 128:	cf 93       	push	r28
+ 12a:	df 93       	push	r29
+ 12c:	ec 01       	movw	r28, r24
+ 12e:	02 c0       	rjmp	.+4      	; 0x134 <Lcd_STR+0xc>
+ 130:	f3 df       	rcall	.-26     	; 0x118 <Lcd_CHAR>
+ 132:	21 96       	adiw	r28, 0x01	; 1
+ 134:	88 81       	ld	r24, Y
+ 136:	81 11       	cpse	r24, r1
+ 138:	fb cf       	rjmp	.-10     	; 0x130 <Lcd_STR+0x8>
+ 13a:	df 91       	pop	r29
+ 13c:	cf 91       	pop	r28
+ 13e:	08 95       	ret
+
+00000140 <Lcd_Pos>:
+ 140:	90 e4       	ldi	r25, 0x40	; 64
+ 142:	89 9f       	mul	r24, r25
+ 144:	60 0d       	add	r22, r0
+ 146:	11 24       	eor	r1, r1
+ 148:	86 2f       	mov	r24, r22
+ 14a:	80 68       	ori	r24, 0x80	; 128
+ 14c:	cd cf       	rjmp	.-102    	; 0xe8 <Lcd_Cmd>
+ 14e:	08 95       	ret
+
+00000150 <Lcd_Clear>:
+ 150:	81 e0       	ldi	r24, 0x01	; 1
+ 152:	ca df       	rcall	.-108    	; 0xe8 <Lcd_Cmd>
+ 154:	83 ef       	ldi	r24, 0xF3	; 243
+ 156:	91 e0       	ldi	r25, 0x01	; 1
+ 158:	01 97       	sbiw	r24, 0x01	; 1
+ 15a:	f1 f7       	brne	.-4      	; 0x158 <Lcd_Clear+0x8>
+ 15c:	00 c0       	rjmp	.+0      	; 0x15e <Lcd_Clear+0xe>
+ 15e:	00 00       	nop
+ 160:	08 95       	ret
+
+00000162 <Lcd_Init>:
+	}
+}
+
+void Lcd_Init(void)
+{
+	Lcd_Cmd(0x38);
+ 162:	88 e3       	ldi	r24, 0x38	; 56
+ 164:	c1 df       	rcall	.-126    	; 0xe8 <Lcd_Cmd>
+ 166:	83 ef       	ldi	r24, 0xF3	; 243
+ 168:	91 e0       	ldi	r25, 0x01	; 1
+ 16a:	01 97       	sbiw	r24, 0x01	; 1
+ 16c:	f1 f7       	brne	.-4      	; 0x16a <Lcd_Init+0x8>
+ 16e:	00 c0       	rjmp	.+0      	; 0x170 <Lcd_Init+0xe>
+ 170:	00 00       	nop
+	_delay_ms(2);	//명령어를 IR에 쓰고나면 40us 또는 1.64ms을 기다림.
+	Lcd_Cmd(0x38);
+ 172:	88 e3       	ldi	r24, 0x38	; 56
+ 174:	b9 df       	rcall	.-142    	; 0xe8 <Lcd_Cmd>
+ 176:	83 ef       	ldi	r24, 0xF3	; 243
+ 178:	91 e0       	ldi	r25, 0x01	; 1
+ 17a:	01 97       	sbiw	r24, 0x01	; 1
+ 17c:	f1 f7       	brne	.-4      	; 0x17a <Lcd_Init+0x18>
+ 17e:	00 c0       	rjmp	.+0      	; 0x180 <Lcd_Init+0x1e>
+	_delay_ms(2);
+	Lcd_Cmd(0x38);
+ 180:	00 00       	nop
+ 182:	88 e3       	ldi	r24, 0x38	; 56
+ 184:	b1 df       	rcall	.-158    	; 0xe8 <Lcd_Cmd>
+ 186:	83 ef       	ldi	r24, 0xF3	; 243
+ 188:	91 e0       	ldi	r25, 0x01	; 1
+ 18a:	01 97       	sbiw	r24, 0x01	; 1
+ 18c:	f1 f7       	brne	.-4      	; 0x18a <Lcd_Init+0x28>
+ 18e:	00 c0       	rjmp	.+0      	; 0x190 <Lcd_Init+0x2e>
+	_delay_ms(2);
+	Lcd_Cmd(0x0c);
+ 190:	00 00       	nop
+ 192:	8c e0       	ldi	r24, 0x0C	; 12
+ 194:	a9 df       	rcall	.-174    	; 0xe8 <Lcd_Cmd>
+ 196:	83 ef       	ldi	r24, 0xF3	; 243
+ 198:	91 e0       	ldi	r25, 0x01	; 1
+ 19a:	01 97       	sbiw	r24, 0x01	; 1
+ 19c:	f1 f7       	brne	.-4      	; 0x19a <Lcd_Init+0x38>
+ 19e:	00 c0       	rjmp	.+0      	; 0x1a0 <Lcd_Init+0x3e>
+	_delay_ms(2);
+	Lcd_Cmd(0x06);
+ 1a0:	00 00       	nop
+ 1a2:	86 e0       	ldi	r24, 0x06	; 6
+ 1a4:	a1 df       	rcall	.-190    	; 0xe8 <Lcd_Cmd>
+ 1a6:	83 ef       	ldi	r24, 0xF3	; 243
+ 1a8:	91 e0       	ldi	r25, 0x01	; 1
+ 1aa:	01 97       	sbiw	r24, 0x01	; 1
+ 1ac:	f1 f7       	brne	.-4      	; 0x1aa <Lcd_Init+0x48>
+ 1ae:	00 c0       	rjmp	.+0      	; 0x1b0 <Lcd_Init+0x4e>
+	_delay_ms(2);
+	Lcd_Clear();
+ 1b0:	00 00       	nop
+ 1b2:	ce cf       	rjmp	.-100    	; 0x150 <Lcd_Clear>
+ 1b4:	08 95       	ret
+
+000001b6 <UART_Condition>:
+	unsigned char data;
+	while((UCSR0A & 0x80)==0);
+	data = UDR0;
+	UCSR0A |= 0x80;
+	return data;
+}
+ 1b6:	8e ef       	ldi	r24, 0xFE	; 254
+ 1b8:	82 b9       	out	0x02, r24	; 2
+ 1ba:	1b b8       	out	0x0b, r1	; 11
+ 1bc:	88 e1       	ldi	r24, 0x18	; 24
+ 1be:	8a b9       	out	0x0a, r24	; 10
+ 1c0:	86 e0       	ldi	r24, 0x06	; 6
+ 1c2:	80 93 95 00 	sts	0x0095, r24	; 0x800095 <__TEXT_REGION_LENGTH__+0x7e0095>
+ 1c6:	10 92 90 00 	sts	0x0090, r1	; 0x800090 <__TEXT_REGION_LENGTH__+0x7e0090>
+ 1ca:	83 e0       	ldi	r24, 0x03	; 3
+ 1cc:	89 b9       	out	0x09, r24	; 9
+ 1ce:	08 95       	ret
+
+000001d0 <init_keypad>:
+ 1d0:	88 ef       	ldi	r24, 0xF8	; 248
+ 1d2:	8a bb       	out	0x1a, r24	; 26
+ 1d4:	87 e0       	ldi	r24, 0x07	; 7
+ 1d6:	8b bb       	out	0x1b, r24	; 27
+ 1d8:	08 95       	ret
+
+000001da <putch>:
+ 1da:	5d 9b       	sbis	0x0b, 5	; 11
+ 1dc:	fe cf       	rjmp	.-4      	; 0x1da <putch>
+ 1de:	8c b9       	out	0x0c, r24	; 12
+ 1e0:	8b b1       	in	r24, 0x0b	; 11
+ 1e2:	80 62       	ori	r24, 0x20	; 32
+ 1e4:	8b b9       	out	0x0b, r24	; 11
+ 1e6:	08 95       	ret
+
+000001e8 <keyscan>:
+
+unsigned char keyscan(void)
+{
+	PORTA = 0x08;
+ 1e8:	88 e0       	ldi	r24, 0x08	; 8
+ 1ea:	8b bb       	out	0x1b, r24	; 27
+ 1ec:	83 e3       	ldi	r24, 0x33	; 51
+ 1ee:	97 e0       	ldi	r25, 0x07	; 7
+ 1f0:	01 97       	sbiw	r24, 0x01	; 1
+ 1f2:	f1 f7       	brne	.-4      	; 0x1f0 <keyscan+0x8>
+	_delay_ms(1);
+	if(PINA&0x01) return '1';
+ 1f4:	c8 99       	sbic	0x19, 0	; 25
+ 1f6:	48 c0       	rjmp	.+144    	; 0x288 <keyscan+0xa0>
+	if(PINA&0x02) return '2';
+ 1f8:	c9 99       	sbic	0x19, 1	; 25
+ 1fa:	48 c0       	rjmp	.+144    	; 0x28c <keyscan+0xa4>
+	if(PINA&0x04) return '3';
+ 1fc:	ca 99       	sbic	0x19, 2	; 25
+ 1fe:	48 c0       	rjmp	.+144    	; 0x290 <keyscan+0xa8>
+	PORTA = 0x00;
+ 200:	1b ba       	out	0x1b, r1	; 27
+ 202:	ef ef       	ldi	r30, 0xFF	; 255
+ 204:	f7 e4       	ldi	r31, 0x47	; 71
+ 206:	31 97       	sbiw	r30, 0x01	; 1
+ 208:	f1 f7       	brne	.-4      	; 0x206 <keyscan+0x1e>
+ 20a:	00 c0       	rjmp	.+0      	; 0x20c <keyscan+0x24>
+ 20c:	00 00       	nop
+	_delay_ms(10);
+	
+	PORTA = 0x10;
+ 20e:	80 e1       	ldi	r24, 0x10	; 16
+ 210:	8b bb       	out	0x1b, r24	; 27
+ 212:	83 e3       	ldi	r24, 0x33	; 51
+ 214:	97 e0       	ldi	r25, 0x07	; 7
+ 216:	01 97       	sbiw	r24, 0x01	; 1
+ 218:	f1 f7       	brne	.-4      	; 0x216 <keyscan+0x2e>
+	_delay_ms(1);
+	if(PINA&0x01) return '4';
+ 21a:	c8 99       	sbic	0x19, 0	; 25
+ 21c:	3b c0       	rjmp	.+118    	; 0x294 <keyscan+0xac>
+	if(PINA&0x02) return '5';
+ 21e:	c9 99       	sbic	0x19, 1	; 25
+ 220:	3b c0       	rjmp	.+118    	; 0x298 <keyscan+0xb0>
+	if(PINA&0x04) return '6';
+ 222:	ca 99       	sbic	0x19, 2	; 25
+ 224:	3b c0       	rjmp	.+118    	; 0x29c <keyscan+0xb4>
+	PORTA = 0x00;
+ 226:	1b ba       	out	0x1b, r1	; 27
+ 228:	ef ef       	ldi	r30, 0xFF	; 255
+ 22a:	f7 e4       	ldi	r31, 0x47	; 71
+ 22c:	31 97       	sbiw	r30, 0x01	; 1
+ 22e:	f1 f7       	brne	.-4      	; 0x22c <keyscan+0x44>
+ 230:	00 c0       	rjmp	.+0      	; 0x232 <keyscan+0x4a>
+ 232:	00 00       	nop
+	_delay_ms(10);
+	
+	PORTA = 0x20;
+ 234:	80 e2       	ldi	r24, 0x20	; 32
+ 236:	8b bb       	out	0x1b, r24	; 27
+ 238:	83 e3       	ldi	r24, 0x33	; 51
+ 23a:	97 e0       	ldi	r25, 0x07	; 7
+ 23c:	01 97       	sbiw	r24, 0x01	; 1
+ 23e:	f1 f7       	brne	.-4      	; 0x23c <keyscan+0x54>
+	_delay_ms(1);
+	if(PINA&0x01) return '7';
+ 240:	c8 99       	sbic	0x19, 0	; 25
+ 242:	2e c0       	rjmp	.+92     	; 0x2a0 <keyscan+0xb8>
+	if(PINA&0x02) return '8';
+ 244:	c9 99       	sbic	0x19, 1	; 25
+ 246:	2e c0       	rjmp	.+92     	; 0x2a4 <keyscan+0xbc>
+	if(PINA&0x04) return '9';
+ 248:	ca 99       	sbic	0x19, 2	; 25
+ 24a:	2e c0       	rjmp	.+92     	; 0x2a8 <keyscan+0xc0>
+	PORTA = 0x00;
+ 24c:	1b ba       	out	0x1b, r1	; 27
+ 24e:	ef ef       	ldi	r30, 0xFF	; 255
+ 250:	f7 e4       	ldi	r31, 0x47	; 71
+ 252:	31 97       	sbiw	r30, 0x01	; 1
+ 254:	f1 f7       	brne	.-4      	; 0x252 <keyscan+0x6a>
+ 256:	00 c0       	rjmp	.+0      	; 0x258 <keyscan+0x70>
+ 258:	00 00       	nop
+	_delay_ms(10);
+	
+	PORTA = 0x40;
+ 25a:	80 e4       	ldi	r24, 0x40	; 64
+ 25c:	8b bb       	out	0x1b, r24	; 27
+ 25e:	83 e3       	ldi	r24, 0x33	; 51
+ 260:	97 e0       	ldi	r25, 0x07	; 7
+ 262:	01 97       	sbiw	r24, 0x01	; 1
+ 264:	f1 f7       	brne	.-4      	; 0x262 <keyscan+0x7a>
+	_delay_ms(1);
+	if(PINA&0x01) return '*';
+ 266:	c8 99       	sbic	0x19, 0	; 25
+ 268:	21 c0       	rjmp	.+66     	; 0x2ac <keyscan+0xc4>
+	if(PINA&0x02) return '0';
+ 26a:	c9 99       	sbic	0x19, 1	; 25
+ 26c:	21 c0       	rjmp	.+66     	; 0x2b0 <keyscan+0xc8>
+	if(PINA&0x04) return '#';
+ 26e:	99 b3       	in	r25, 0x19	; 25
+ 270:	89 2f       	mov	r24, r25
+ 272:	84 70       	andi	r24, 0x04	; 4
+ 274:	92 fd       	sbrc	r25, 2
+ 276:	1e c0       	rjmp	.+60     	; 0x2b4 <keyscan+0xcc>
+	PORTA = 0x00;
+ 278:	1b ba       	out	0x1b, r1	; 27
+ 27a:	ef ef       	ldi	r30, 0xFF	; 255
+ 27c:	f7 e4       	ldi	r31, 0x47	; 71
+ 27e:	31 97       	sbiw	r30, 0x01	; 1
+ 280:	f1 f7       	brne	.-4      	; 0x27e <keyscan+0x96>
+ 282:	00 c0       	rjmp	.+0      	; 0x284 <keyscan+0x9c>
+ 284:	00 00       	nop
+	_delay_ms(10);
+	
+	return 0;
+ 286:	08 95       	ret
+
+unsigned char keyscan(void)
+{
+	PORTA = 0x08;
+	_delay_ms(1);
+	if(PINA&0x01) return '1';
+ 288:	81 e3       	ldi	r24, 0x31	; 49
+ 28a:	08 95       	ret
+	if(PINA&0x02) return '2';
+ 28c:	82 e3       	ldi	r24, 0x32	; 50
+ 28e:	08 95       	ret
+	if(PINA&0x04) return '3';
+ 290:	83 e3       	ldi	r24, 0x33	; 51
+ 292:	08 95       	ret
+	PORTA = 0x00;
+	_delay_ms(10);
+	
+	PORTA = 0x10;
+	_delay_ms(1);
+	if(PINA&0x01) return '4';
+ 294:	84 e3       	ldi	r24, 0x34	; 52
+ 296:	08 95       	ret
+	if(PINA&0x02) return '5';
+ 298:	85 e3       	ldi	r24, 0x35	; 53
+ 29a:	08 95       	ret
+	if(PINA&0x04) return '6';
+ 29c:	86 e3       	ldi	r24, 0x36	; 54
+ 29e:	08 95       	ret
+	PORTA = 0x00;
+	_delay_ms(10);
+	
+	PORTA = 0x20;
+	_delay_ms(1);
+	if(PINA&0x01) return '7';
+ 2a0:	87 e3       	ldi	r24, 0x37	; 55
+ 2a2:	08 95       	ret
+	if(PINA&0x02) return '8';
+ 2a4:	88 e3       	ldi	r24, 0x38	; 56
+ 2a6:	08 95       	ret
+	if(PINA&0x04) return '9';
+ 2a8:	89 e3       	ldi	r24, 0x39	; 57
+ 2aa:	08 95       	ret
+	PORTA = 0x00;
+	_delay_ms(10);
+	
+	PORTA = 0x40;
+	_delay_ms(1);
+	if(PINA&0x01) return '*';
+ 2ac:	8a e2       	ldi	r24, 0x2A	; 42
+ 2ae:	08 95       	ret
+	if(PINA&0x02) return '0';
+ 2b0:	80 e3       	ldi	r24, 0x30	; 48
+ 2b2:	08 95       	ret
+	if(PINA&0x04) return '#';
+ 2b4:	83 e2       	ldi	r24, 0x23	; 35
+	PORTA = 0x00;
+	_delay_ms(10);
+	
+	return 0;
+ 2b6:	08 95       	ret
+
+000002b8 <main>:
+}
+
+unsigned char Step[8] = {0x90,0x80,0xC0,0x40,0x60,0x20,0x30,0x10};
+
+int main()
+{
+ 2b8:	cf 93       	push	r28
+ 2ba:	df 93       	push	r29
+ 2bc:	cd b7       	in	r28, 0x3d	; 61
+ 2be:	de b7       	in	r29, 0x3e	; 62
+ 2c0:	ae 97       	sbiw	r28, 0x2e	; 46
+ 2c2:	0f b6       	in	r0, 0x3f	; 63
+ 2c4:	f8 94       	cli
+ 2c6:	de bf       	out	0x3e, r29	; 62
+ 2c8:	0f be       	out	0x3f, r0	; 63
+ 2ca:	cd bf       	out	0x3d, r28	; 61
+	//키패드에 비밀번호 입력 이때 번호는 ****모양
+	//비밀번호가 맞으면 스탭모터로 문열림
+	//비밀번호가 틀리면 LCD창에 ERROR NUMBER 및 부저음 발생
+	//인터럽트 버튼을 누르면 비밀번호 입력
+	
+	unsigned char text[] = "\r\n Insert Password : ";
+ 2cc:	86 e1       	ldi	r24, 0x16	; 22
+ 2ce:	ef e1       	ldi	r30, 0x1F	; 31
+ 2d0:	f1 e0       	ldi	r31, 0x01	; 1
+ 2d2:	de 01       	movw	r26, r28
+ 2d4:	11 96       	adiw	r26, 0x01	; 1
+ 2d6:	01 90       	ld	r0, Z+
+ 2d8:	0d 92       	st	X+, r0
+ 2da:	8a 95       	dec	r24
+ 2dc:	e1 f7       	brne	.-8      	; 0x2d6 <main+0x1e>
+	// 부저음
+	unsigned int DoReMi[8] = {523,587, 659, 698, 783,880, 987, 1046};
+ 2de:	80 e1       	ldi	r24, 0x10	; 16
+ 2e0:	e8 e0       	ldi	r30, 0x08	; 8
+ 2e2:	f1 e0       	ldi	r31, 0x01	; 1
+ 2e4:	de 01       	movw	r26, r28
+ 2e6:	57 96       	adiw	r26, 0x17	; 23
+ 2e8:	01 90       	ld	r0, Z+
+ 2ea:	0d 92       	st	X+, r0
+ 2ec:	8a 95       	dec	r24
+ 2ee:	e1 f7       	brne	.-8      	; 0x2e8 <main+0x30>
+	unsigned char piano=0;
+	UART_Condition();
+ 2f0:	62 df       	rcall	.-316    	; 0x1b6 <UART_Condition>
+	init_keypad();
+ 2f2:	6e df       	rcall	.-292    	; 0x1d0 <init_keypad>
+ 2f4:	81 e3       	ldi	r24, 0x31	; 49
+	unsigned int i =0;
+	unsigned char j, t = 0;	// 모터
+	unsigned char Password[4];
+	unsigned char Old_Password[4]= {'1','2','3','4'};
+ 2f6:	8b a7       	std	Y+43, r24	; 0x2b
+ 2f8:	82 e3       	ldi	r24, 0x32	; 50
+ 2fa:	8c a7       	std	Y+44, r24	; 0x2c
+ 2fc:	83 e3       	ldi	r24, 0x33	; 51
+ 2fe:	8d a7       	std	Y+45, r24	; 0x2d
+ 300:	84 e3       	ldi	r24, 0x34	; 52
+ 302:	8e a7       	std	Y+46, r24	; 0x2e
+ 304:	80 e2       	ldi	r24, 0x20	; 32
+	int press = 0;
+	
+	// Step Motor 문열기
+	DDRB = 0x20; // MOTOR1_EN 를 출력 포트로 설정 0b 0010 0000
+ 306:	87 bb       	out	0x17, r24	; 23
+ 308:	80 ef       	ldi	r24, 0xF0	; 240
+	DDRD = 0xF0; // STEP0 ~ STEP3을 출력 포트로 설정
+ 30a:	81 bb       	out	0x11, r24	; 17
+ 30c:	87 b3       	in	r24, 0x17	; 23
+	//PORTB &= ~0x20; // M1 Disable, DC 모터 정지
+	
+	//부저
+	DDRB |= 0x80; // PWM 출력, OCR1C 0b 1010 0000
+ 30e:	80 68       	ori	r24, 0x80	; 128
+ 310:	87 bb       	out	0x17, r24	; 23
+ 312:	8f b5       	in	r24, 0x2f	; 47
+	TCCR1A |= 0x0A; // COM1C(1:0)=“10”, OC1C핀사용, WGM3(1:0)=“10”
+ 314:	8a 60       	ori	r24, 0x0A	; 10
+ 316:	8f bd       	out	0x2f, r24	; 47
+ 318:	8e b5       	in	r24, 0x2e	; 46
+	TCCR1B |= 0x19; // WGM3(3:2)=“11”, CS3(2:0)=“001” 1분주 사용
+ 31a:	89 61       	ori	r24, 0x19	; 25
+ 31c:	8e bd       	out	0x2e, r24	; 46
+ 31e:	10 92 7a 00 	sts	0x007A, r1	; 0x80007a <__TEXT_REGION_LENGTH__+0x7e007a>
+	TCCR1C = 0x00; // WGM3(3:0)=“1110”, Fast PWM, 모드 14
+ 322:	1d bc       	out	0x2d, r1	; 45
+	TCNT1 = 0x0000; // 타이머1 카운터 초기화
+ 324:	1c bc       	out	0x2c, r1	; 44
+ 326:	8f ef       	ldi	r24, 0xFF	; 255
+	
+	//LCD로 OPEN 출력
+	DDRC = 0xff;
+ 328:	84 bb       	out	0x14, r24	; 20
+ 32a:	8f e0       	ldi	r24, 0x0F	; 15
+	DDRG = 0x0f;
+ 32c:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+	Byte *str = " OPEN ";
+	Lcd_Init();
+ 330:	18 df       	rcall	.-464    	; 0x162 <Lcd_Init>
+ 332:	0e df       	rcall	.-484    	; 0x150 <Lcd_Clear>
+	Lcd_Clear();
+ 334:	e1 2c       	mov	r14, r1
+ 336:	f1 2c       	mov	r15, r1
+	init_keypad();
+	unsigned int i =0;
+	unsigned char j, t = 0;	// 모터
+	unsigned char Password[4];
+	unsigned char Old_Password[4]= {'1','2','3','4'};
+	int press = 0;
+ 338:	10 e0       	ldi	r17, 0x00	; 0
+ 33a:	c1 2c       	mov	r12, r1
+	unsigned int DoReMi[8] = {523,587, 659, 698, 783,880, 987, 1046};
+	unsigned char piano=0;
+	UART_Condition();
+	init_keypad();
+	unsigned int i =0;
+	unsigned char j, t = 0;	// 모터
+ 33c:	d1 2c       	mov	r13, r1
+	// 부저음
+	unsigned int DoReMi[8] = {523,587, 659, 698, 783,880, 987, 1046};
+	unsigned char piano=0;
+	UART_Condition();
+	init_keypad();
+	unsigned int i =0;
+ 33e:	00 e0       	ldi	r16, 0x00	; 0
+ 340:	04 c0       	rjmp	.+8      	; 0x34a <main+0x92>
+	//인터럽트 버튼을 누르면 비밀번호 입력
+	
+	unsigned char text[] = "\r\n Insert Password : ";
+	// 부저음
+	unsigned int DoReMi[8] = {523,587, 659, 698, 783,880, 987, 1046};
+	unsigned char piano=0;
+ 342:	2f ef       	ldi	r18, 0xFF	; 255
+
+	while(1)
+	{
+		while(text[i] !='\0')
+		{
+			putch(text[i++]);	//비밀번호 입력하시오.
+ 344:	c2 1a       	sub	r12, r18
+ 346:	d2 0a       	sbc	r13, r18
+ 348:	48 df       	rcall	.-368    	; 0x1da <putch>
+ 34a:	e1 e0       	ldi	r30, 0x01	; 1
+ 34c:	f0 e0       	ldi	r31, 0x00	; 0
+	Lcd_Init();
+	Lcd_Clear();
+
+	while(1)
+	{
+		while(text[i] !='\0')
+ 34e:	ec 0f       	add	r30, r28
+ 350:	fd 1f       	adc	r31, r29
+ 352:	ec 0d       	add	r30, r12
+ 354:	fd 1d       	adc	r31, r13
+ 356:	80 81       	ld	r24, Z
+ 358:	81 11       	cpse	r24, r1
+ 35a:	f3 cf       	rjmp	.-26     	; 0x342 <main+0x8a>
+ 35c:	c1 2c       	mov	r12, r1
+ 35e:	d1 2c       	mov	r13, r1
+ 360:	84 e0       	ldi	r24, 0x04	; 4
+		}
+		i=0;
+		while (1)
+		{
+			//누르고 있는 상태 - 1, 떨어진 상태 - 0
+			if(i >= 4) break;
+ 362:	c8 16       	cp	r12, r24
+ 364:	d1 04       	cpc	r13, r1
+ 366:	30 f5       	brcc	.+76     	; 0x3b4 <main+0xfc>
+ 368:	3f df       	rcall	.-386    	; 0x1e8 <keyscan>
+			unsigned char input = keyscan();
+ 36a:	81 11       	cpse	r24, r1
+ 36c:	02 c0       	rjmp	.+4      	; 0x372 <main+0xba>
+			if (input == 0)
+ 36e:	e1 2c       	mov	r14, r1
+ 370:	f1 2c       	mov	r15, r1
+			{
+				press = 0;
+ 372:	88 23       	and	r24, r24
+ 374:	a9 f3       	breq	.-22     	; 0x360 <main+0xa8>
+			}
+			if (input != 0)
+ 376:	e1 14       	cp	r14, r1
+ 378:	f1 04       	cpc	r15, r1
+			{
+				if (press)
+ 37a:	91 f7       	brne	.-28     	; 0x360 <main+0xa8>
+ 37c:	e7 e2       	ldi	r30, 0x27	; 39
+ 37e:	f0 e0       	ldi	r31, 0x00	; 0
+				{
+					continue;
+				}
+				unsigned char key = input; //keyscan을 통해 받는 값을 key에 저장
+				Password[i] = key;	// key 값을 하나씩 Password 배열에 저장하며 비밀번호 설정
+ 380:	ec 0f       	add	r30, r28
+ 382:	fd 1f       	adc	r31, r29
+ 384:	ec 0d       	add	r30, r12
+ 386:	fd 1d       	adc	r31, r13
+ 388:	80 83       	st	Z, r24
+ 38a:	9f ef       	ldi	r25, 0xFF	; 255
+				press = 1;
+				i++;
+ 38c:	c9 1a       	sub	r12, r25
+ 38e:	d9 0a       	sbc	r13, r25
+ 390:	8a e2       	ldi	r24, 0x2A	; 42
+				putch('*');
+ 392:	23 df       	rcall	.-442    	; 0x1da <putch>
+ 394:	ee 24       	eor	r14, r14
+ 396:	e3 94       	inc	r14
+				{
+					continue;
+				}
+				unsigned char key = input; //keyscan을 통해 받는 값을 key에 저장
+				Password[i] = key;	// key 값을 하나씩 Password 배열에 저장하며 비밀번호 설정
+				press = 1;
+ 398:	f1 2c       	mov	r15, r1
+ 39a:	e2 cf       	rjmp	.-60     	; 0x360 <main+0xa8>
+ 39c:	e7 e2       	ldi	r30, 0x27	; 39
+ 39e:	f0 e0       	ldi	r31, 0x00	; 0
+				i++;
+				putch('*');
+			}
+		}
+		for(int i=0; i<4; i++)
+			putch(Password[i]);
+ 3a0:	ec 0f       	add	r30, r28
+ 3a2:	fd 1f       	adc	r31, r29
+ 3a4:	ec 0d       	add	r30, r12
+ 3a6:	fd 1d       	adc	r31, r13
+ 3a8:	80 81       	ld	r24, Z
+ 3aa:	17 df       	rcall	.-466    	; 0x1da <putch>
+ 3ac:	ef ef       	ldi	r30, 0xFF	; 255
+ 3ae:	ce 1a       	sub	r12, r30
+				press = 1;
+				i++;
+				putch('*');
+			}
+		}
+		for(int i=0; i<4; i++)
+ 3b0:	de 0a       	sbc	r13, r30
+ 3b2:	02 c0       	rjmp	.+4      	; 0x3b8 <main+0x100>
+ 3b4:	c1 2c       	mov	r12, r1
+ 3b6:	d1 2c       	mov	r13, r1
+ 3b8:	f4 e0       	ldi	r31, 0x04	; 4
+ 3ba:	cf 16       	cp	r12, r31
+ 3bc:	d1 04       	cpc	r13, r1
+ 3be:	74 f3       	brlt	.-36     	; 0x39c <main+0xe4>
+ 3c0:	8d e0       	ldi	r24, 0x0D	; 13
+			putch(Password[i]);
+		putch('\r'); putch('\n');
+ 3c2:	0b df       	rcall	.-490    	; 0x1da <putch>
+ 3c4:	8a e0       	ldi	r24, 0x0A	; 10
+ 3c6:	09 df       	rcall	.-494    	; 0x1da <putch>
+ 3c8:	c1 2c       	mov	r12, r1
+ 3ca:	d1 2c       	mov	r13, r1
+ 3cc:	0b c0       	rjmp	.+22     	; 0x3e4 <main+0x12c>
+		for(int i=0; i<4; i++)
+ 3ce:	eb e2       	ldi	r30, 0x2B	; 43
+ 3d0:	f0 e0       	ldi	r31, 0x00	; 0
+			putch(Old_Password[i]);
+ 3d2:	ec 0f       	add	r30, r28
+ 3d4:	fd 1f       	adc	r31, r29
+ 3d6:	ec 0d       	add	r30, r12
+ 3d8:	fd 1d       	adc	r31, r13
+ 3da:	80 81       	ld	r24, Z
+ 3dc:	fe de       	rcall	.-516    	; 0x1da <putch>
+ 3de:	2f ef       	ldi	r18, 0xFF	; 255
+ 3e0:	c2 1a       	sub	r12, r18
+			}
+		}
+		for(int i=0; i<4; i++)
+			putch(Password[i]);
+		putch('\r'); putch('\n');
+		for(int i=0; i<4; i++)
+ 3e2:	d2 0a       	sbc	r13, r18
+ 3e4:	84 e0       	ldi	r24, 0x04	; 4
+ 3e6:	c8 16       	cp	r12, r24
+ 3e8:	d1 04       	cpc	r13, r1
+ 3ea:	8c f3       	brlt	.-30     	; 0x3ce <main+0x116>
+ 3ec:	8d e0       	ldi	r24, 0x0D	; 13
+ 3ee:	f5 de       	rcall	.-534    	; 0x1da <putch>
+			putch(Old_Password[i]);
+		putch('\r'); putch('\n');
+ 3f0:	8a e0       	ldi	r24, 0x0A	; 10
+ 3f2:	f3 de       	rcall	.-538    	; 0x1da <putch>
+ 3f4:	80 e0       	ldi	r24, 0x00	; 0
+ 3f6:	90 e0       	ldi	r25, 0x00	; 0
+ 3f8:	11 c0       	rjmp	.+34     	; 0x41c <__LOCK_REGION_LENGTH__+0x1c>
+ 3fa:	e7 e2       	ldi	r30, 0x27	; 39
+			//if (Password[4] = "####") // 반복문을 탈출하며 비밀번호 재설정
+			//{
+				//break;
+			//}
+			int fault = 0;
+			for (i=0; i<4; i++)
+ 3fc:	f0 e0       	ldi	r31, 0x00	; 0
+ 3fe:	ec 0f       	add	r30, r28
+ 400:	fd 1f       	adc	r31, r29
+			{
+				if (Password[i] != Old_Password[i])
+ 402:	e8 0f       	add	r30, r24
+ 404:	f9 1f       	adc	r31, r25
+ 406:	30 81       	ld	r19, Z
+ 408:	eb e2       	ldi	r30, 0x2B	; 43
+ 40a:	f0 e0       	ldi	r31, 0x00	; 0
+ 40c:	ec 0f       	add	r30, r28
+ 40e:	fd 1f       	adc	r31, r29
+ 410:	e8 0f       	add	r30, r24
+ 412:	f9 1f       	adc	r31, r25
+ 414:	20 81       	ld	r18, Z
+ 416:	32 13       	cpse	r19, r18
+ 418:	07 c0       	rjmp	.+14     	; 0x428 <__LOCK_REGION_LENGTH__+0x28>
+ 41a:	01 96       	adiw	r24, 0x01	; 1
+ 41c:	84 30       	cpi	r24, 0x04	; 4
+ 41e:	91 05       	cpc	r25, r1
+ 420:	60 f3       	brcs	.-40     	; 0x3fa <main+0x142>
+			//if (Password[4] = "####") // 반복문을 탈출하며 비밀번호 재설정
+			//{
+				//break;
+			//}
+			int fault = 0;
+			for (i=0; i<4; i++)
+ 422:	80 e0       	ldi	r24, 0x00	; 0
+ 424:	90 e0       	ldi	r25, 0x00	; 0
+ 426:	02 c0       	rjmp	.+4      	; 0x42c <__LOCK_REGION_LENGTH__+0x2c>
+		{
+			//if (Password[4] = "####") // 반복문을 탈출하며 비밀번호 재설정
+			//{
+				//break;
+			//}
+			int fault = 0;
+ 428:	81 e0       	ldi	r24, 0x01	; 1
+ 42a:	90 e0       	ldi	r25, 0x00	; 0
+ 42c:	89 2b       	or	r24, r25
+			for (i=0; i<4; i++)
+			{
+				if (Password[i] != Old_Password[i])
+				{
+					fault = 1;
+ 42e:	09 f0       	breq	.+2      	; 0x432 <__LOCK_REGION_LENGTH__+0x32>
+ 430:	56 c0       	rjmp	.+172    	; 0x4de <__LOCK_REGION_LENGTH__+0xde>
+					break;
+				}
+			}
+			if (!fault) // 입력한 비밀번호가 원래 비번하고 같으면 
+ 432:	84 e6       	ldi	r24, 0x64	; 100
+ 434:	d2 de       	rcall	.-604    	; 0x1da <putch>
+ 436:	80 e0       	ldi	r24, 0x00	; 0
+			{
+				putch('d');
+ 438:	11 c0       	rjmp	.+34     	; 0x45c <__LOCK_REGION_LENGTH__+0x5c>
+ 43a:	e1 2f       	mov	r30, r17
+ 43c:	f0 e0       	ldi	r31, 0x00	; 0
+				for ( j = 0; j < 48 ; j++ )
+ 43e:	e0 50       	subi	r30, 0x00	; 0
+ 440:	ff 4f       	sbci	r31, 0xFF	; 255
+				{
+					PORTD = Step[t]; // 한 스텝 실행
+ 442:	90 81       	ld	r25, Z
+ 444:	92 bb       	out	0x12, r25	; 18
+ 446:	1f 5f       	subi	r17, 0xFF	; 255
+ 448:	18 30       	cpi	r17, 0x08	; 8
+ 44a:	08 f0       	brcs	.+2      	; 0x44e <__LOCK_REGION_LENGTH__+0x4e>
+ 44c:	10 e0       	ldi	r17, 0x00	; 0
+					t++; // 다음 스텝 실행을 위해 t 증가
+ 44e:	ef ef       	ldi	r30, 0xFF	; 255
+					if(t > 7) t = 0; // 8 스텝을 초과하지 않도록 초기화
+ 450:	f7 e4       	ldi	r31, 0x47	; 71
+ 452:	31 97       	sbiw	r30, 0x01	; 1
+ 454:	f1 f7       	brne	.-4      	; 0x452 <__LOCK_REGION_LENGTH__+0x52>
+ 456:	00 c0       	rjmp	.+0      	; 0x458 <__LOCK_REGION_LENGTH__+0x58>
+ 458:	00 00       	nop
+ 45a:	8f 5f       	subi	r24, 0xFF	; 255
+ 45c:	80 33       	cpi	r24, 0x30	; 48
+				}
+			}
+			if (!fault) // 입력한 비밀번호가 원래 비번하고 같으면 
+			{
+				putch('d');
+				for ( j = 0; j < 48 ; j++ )
+ 45e:	68 f3       	brcs	.-38     	; 0x43a <__LOCK_REGION_LENGTH__+0x3a>
+ 460:	60 e0       	ldi	r22, 0x00	; 0
+ 462:	80 e0       	ldi	r24, 0x00	; 0
+					t++; // 다음 스텝 실행을 위해 t 증가
+					if(t > 7) t = 0; // 8 스텝을 초과하지 않도록 초기화
+					_delay_ms(10);
+				}
+				//Lcd에 OPEN 출력
+				Lcd_Pos(0,0);
+ 464:	6d de       	rcall	.-806    	; 0x140 <Lcd_Pos>
+ 466:	88 e1       	ldi	r24, 0x18	; 24
+ 468:	91 e0       	ldi	r25, 0x01	; 1
+ 46a:	5e de       	rcall	.-836    	; 0x128 <Lcd_STR>
+				Lcd_STR(str);
+ 46c:	c1 2c       	mov	r12, r1
+ 46e:	d1 2c       	mov	r13, r1
+ 470:	2f c0       	rjmp	.+94     	; 0x4d0 <__LOCK_REGION_LENGTH__+0xd0>
+ 472:	e0 2f       	mov	r30, r16
+				
+				//열리는 부저 
+				for (i = 0; i < 9; i++)
+ 474:	f0 e0       	ldi	r31, 0x00	; 0
+ 476:	ee 0f       	add	r30, r30
+ 478:	ff 1f       	adc	r31, r31
+				{
+					ICR1 = 7372800/DoReMi[piano]; // 버튼에 맞는 음향을 연주
+ 47a:	81 e0       	ldi	r24, 0x01	; 1
+ 47c:	90 e0       	ldi	r25, 0x00	; 0
+ 47e:	8c 0f       	add	r24, r28
+ 480:	9d 1f       	adc	r25, r29
+ 482:	e8 0f       	add	r30, r24
+ 484:	f9 1f       	adc	r31, r25
+ 486:	26 89       	ldd	r18, Z+22	; 0x16
+ 488:	37 89       	ldd	r19, Z+23	; 0x17
+ 48a:	40 e0       	ldi	r20, 0x00	; 0
+ 48c:	50 e0       	ldi	r21, 0x00	; 0
+ 48e:	60 e0       	ldi	r22, 0x00	; 0
+ 490:	70 e8       	ldi	r23, 0x80	; 128
+ 492:	80 e7       	ldi	r24, 0x70	; 112
+ 494:	90 e0       	ldi	r25, 0x00	; 0
+ 496:	29 d0       	rcall	.+82     	; 0x4ea <__divmodsi4>
+ 498:	37 bd       	out	0x27, r19	; 39
+ 49a:	26 bd       	out	0x26, r18	; 38
+ 49c:	86 b5       	in	r24, 0x26	; 38
+ 49e:	97 b5       	in	r25, 0x27	; 39
+ 4a0:	96 95       	lsr	r25
+ 4a2:	87 95       	ror	r24
+					OCR1C = ICR1/4; // 50% 듀티비
+ 4a4:	96 95       	lsr	r25
+ 4a6:	87 95       	ror	r24
+ 4a8:	90 93 79 00 	sts	0x0079, r25	; 0x800079 <__TEXT_REGION_LENGTH__+0x7e0079>
+ 4ac:	80 93 78 00 	sts	0x0078, r24	; 0x800078 <__TEXT_REGION_LENGTH__+0x7e0078>
+ 4b0:	0f 5f       	subi	r16, 0xFF	; 255
+ 4b2:	09 30       	cpi	r16, 0x09	; 9
+ 4b4:	08 f0       	brcs	.+2      	; 0x4b8 <__LOCK_REGION_LENGTH__+0xb8>
+ 4b6:	00 e0       	ldi	r16, 0x00	; 0
+					piano++; // piano 변수 1증가
+ 4b8:	9f ef       	ldi	r25, 0xFF	; 255
+					if(8 < piano) piano = 0; // piano가 9가 되면 초기화
+ 4ba:	ef e3       	ldi	r30, 0x3F	; 63
+ 4bc:	f2 e0       	ldi	r31, 0x02	; 2
+ 4be:	91 50       	subi	r25, 0x01	; 1
+ 4c0:	e0 40       	sbci	r30, 0x00	; 0
+ 4c2:	f0 40       	sbci	r31, 0x00	; 0
+ 4c4:	e1 f7       	brne	.-8      	; 0x4be <__LOCK_REGION_LENGTH__+0xbe>
+ 4c6:	00 c0       	rjmp	.+0      	; 0x4c8 <__LOCK_REGION_LENGTH__+0xc8>
+ 4c8:	00 00       	nop
+ 4ca:	2f ef       	ldi	r18, 0xFF	; 255
+ 4cc:	c2 1a       	sub	r12, r18
+ 4ce:	d2 0a       	sbc	r13, r18
+ 4d0:	89 e0       	ldi	r24, 0x09	; 9
+				//Lcd에 OPEN 출력
+				Lcd_Pos(0,0);
+				Lcd_STR(str);
+				
+				//열리는 부저 
+				for (i = 0; i < 9; i++)
+ 4d2:	c8 16       	cp	r12, r24
+ 4d4:	d1 04       	cpc	r13, r1
+ 4d6:	68 f2       	brcs	.-102    	; 0x472 <__LOCK_REGION_LENGTH__+0x72>
+ 4d8:	38 cf       	rjmp	.-400    	; 0x34a <main+0x92>
+ 4da:	01 96       	adiw	r24, 0x01	; 1
+ 4dc:	02 c0       	rjmp	.+4      	; 0x4e2 <__LOCK_REGION_LENGTH__+0xe2>
+ 4de:	80 e0       	ldi	r24, 0x00	; 0
+ 4e0:	90 e0       	ldi	r25, 0x00	; 0
+				break;
+			}
+			else
+			{
+				//틀렸다는 부저
+				for (i=0; i<4; i++)
+ 4e2:	84 30       	cpi	r24, 0x04	; 4
+ 4e4:	91 05       	cpc	r25, r1
+ 4e6:	c8 f3       	brcs	.-14     	; 0x4da <__LOCK_REGION_LENGTH__+0xda>
+ 4e8:	85 cf       	rjmp	.-246    	; 0x3f4 <main+0x13c>
+
+000004ea <__divmodsi4>:
+ 4ea:	05 2e       	mov	r0, r21
+ 4ec:	97 fb       	bst	r25, 7
+ 4ee:	16 f4       	brtc	.+4      	; 0x4f4 <__divmodsi4+0xa>
+ 4f0:	00 94       	com	r0
+ 4f2:	0f d0       	rcall	.+30     	; 0x512 <__negsi2>
+ 4f4:	57 fd       	sbrc	r21, 7
+ 4f6:	05 d0       	rcall	.+10     	; 0x502 <__divmodsi4_neg2>
+ 4f8:	14 d0       	rcall	.+40     	; 0x522 <__udivmodsi4>
+ 4fa:	07 fc       	sbrc	r0, 7
+ 4fc:	02 d0       	rcall	.+4      	; 0x502 <__divmodsi4_neg2>
+ 4fe:	46 f4       	brtc	.+16     	; 0x510 <__divmodsi4_exit>
+ 500:	08 c0       	rjmp	.+16     	; 0x512 <__negsi2>
+
+00000502 <__divmodsi4_neg2>:
+ 502:	50 95       	com	r21
+ 504:	40 95       	com	r20
+ 506:	30 95       	com	r19
+ 508:	21 95       	neg	r18
+ 50a:	3f 4f       	sbci	r19, 0xFF	; 255
+ 50c:	4f 4f       	sbci	r20, 0xFF	; 255
+ 50e:	5f 4f       	sbci	r21, 0xFF	; 255
+
+00000510 <__divmodsi4_exit>:
+ 510:	08 95       	ret
+
+00000512 <__negsi2>:
+ 512:	90 95       	com	r25
+ 514:	80 95       	com	r24
+ 516:	70 95       	com	r23
+ 518:	61 95       	neg	r22
+ 51a:	7f 4f       	sbci	r23, 0xFF	; 255
+ 51c:	8f 4f       	sbci	r24, 0xFF	; 255
+ 51e:	9f 4f       	sbci	r25, 0xFF	; 255
+ 520:	08 95       	ret
+
+00000522 <__udivmodsi4>:
+ 522:	a1 e2       	ldi	r26, 0x21	; 33
+ 524:	1a 2e       	mov	r1, r26
+ 526:	aa 1b       	sub	r26, r26
+ 528:	bb 1b       	sub	r27, r27
+ 52a:	fd 01       	movw	r30, r26
+ 52c:	0d c0       	rjmp	.+26     	; 0x548 <__udivmodsi4_ep>
+
+0000052e <__udivmodsi4_loop>:
+ 52e:	aa 1f       	adc	r26, r26
+ 530:	bb 1f       	adc	r27, r27
+ 532:	ee 1f       	adc	r30, r30
+ 534:	ff 1f       	adc	r31, r31
+ 536:	a2 17       	cp	r26, r18
+ 538:	b3 07       	cpc	r27, r19
+ 53a:	e4 07       	cpc	r30, r20
+ 53c:	f5 07       	cpc	r31, r21
+ 53e:	20 f0       	brcs	.+8      	; 0x548 <__udivmodsi4_ep>
+ 540:	a2 1b       	sub	r26, r18
+ 542:	b3 0b       	sbc	r27, r19
+ 544:	e4 0b       	sbc	r30, r20
+ 546:	f5 0b       	sbc	r31, r21
+
+00000548 <__udivmodsi4_ep>:
+ 548:	66 1f       	adc	r22, r22
+ 54a:	77 1f       	adc	r23, r23
+ 54c:	88 1f       	adc	r24, r24
+ 54e:	99 1f       	adc	r25, r25
+ 550:	1a 94       	dec	r1
+ 552:	69 f7       	brne	.-38     	; 0x52e <__udivmodsi4_loop>
+ 554:	60 95       	com	r22
+ 556:	70 95       	com	r23
+ 558:	80 95       	com	r24
+ 55a:	90 95       	com	r25
+ 55c:	9b 01       	movw	r18, r22
+ 55e:	ac 01       	movw	r20, r24
+ 560:	bd 01       	movw	r22, r26
+ 562:	cf 01       	movw	r24, r30
+ 564:	08 95       	ret
+
+00000566 <_exit>:
+ 566:	f8 94       	cli
+
+00000568 <__stop_program>:
+ 568:	ff cf       	rjmp	.-2      	; 0x568 <__stop_program>
